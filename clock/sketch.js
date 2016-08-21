@@ -34,7 +34,7 @@ function draw() {
   //angles
   var s = map(second(),0,60,0,TWO_PI)-HALF_PI;
   var m = map(minute(),0,60,0,TWO_PI)-HALF_PI;
-  var h = map(hour(),0,60,0,TWO_PI)-HALF_PI;
+  var h = map(hour()%12,0,12,0,TWO_PI)-HALF_PI;
   
   //hands of clock
   stroke(0,255,255);
